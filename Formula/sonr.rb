@@ -5,22 +5,22 @@
 class Sonr < Formula
   desc "Sonr is a decentralized, permissionless, and censorship-resistant identity network."
   homepage "https://sonr.io/"
-  version "0.4.2"
+  version "0.5.1"
 
   depends_on "ipfs"
 
   on_macos do
     on_intel do
-      url "https://github.com/onsonr/sonr/releases/download/v0.4.2/sonr_0.4.2_darwin_amd64.tar.gz"
-      sha256 "e57ff435e20c3e922744f44234a16cf143fef3f7546be36310a1c65b7a468405"
+      url "https://github.com/onsonr/sonr/releases/download/v0.5.1/sonr_0.5.1_darwin_amd64.tar.gz"
+      sha256 "ab393aa6d7b4e3cd6ff7c9d6747651a6491712860cd5f0d87141e41f9d557c46"
 
       def install
         bin.install "sonrd"
       end
     end
     on_arm do
-      url "https://github.com/onsonr/sonr/releases/download/v0.4.2/sonr_0.4.2_darwin_arm64.tar.gz"
-      sha256 "4f653e24a2da703526d03580616bec56564cb3db633ae8f4032307190603d937"
+      url "https://github.com/onsonr/sonr/releases/download/v0.5.1/sonr_0.5.1_darwin_arm64.tar.gz"
+      sha256 "ce16c8cb9e569b916aec218ae3705f1a7f461fe57bfbc687ab4a4fd05ee34a44"
 
       def install
         bin.install "sonrd"
@@ -31,8 +31,8 @@ class Sonr < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onsonr/sonr/releases/download/v0.4.2/sonr_0.4.2_linux_amd64.tar.gz"
-        sha256 "a67ec1f283ec15297b460781a7d6b8e16f7de93e14869037470e8fd81873cdb9"
+        url "https://github.com/onsonr/sonr/releases/download/v0.5.1/sonr_0.5.1_linux_amd64.tar.gz"
+        sha256 "cd6489688d466ff34d35ac2a162cbf9eed741043759082a63555300ae3b20516"
 
         def install
           bin.install "sonrd"
@@ -41,8 +41,8 @@ class Sonr < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onsonr/sonr/releases/download/v0.4.2/sonr_0.4.2_linux_arm64.tar.gz"
-        sha256 "cc5922c19b5e2dec4e21b219188143b68b4e9bed07f5b4d13aef1874249a31de"
+        url "https://github.com/onsonr/sonr/releases/download/v0.5.1/sonr_0.5.1_linux_arm64.tar.gz"
+        sha256 "8d0dc65aa33c816f6f0241059a4b05150b8a51e9469b2018bc3134a113377705"
 
         def install
           bin.install "sonrd"
@@ -53,7 +53,7 @@ class Sonr < Formula
 
   def caveats
     <<~EOS
-      Run a local sonr node and access it with the motr proxy
+      Run a local sonr node and access it with the hway proxy
     EOS
   end
 end
