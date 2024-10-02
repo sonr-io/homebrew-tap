@@ -5,22 +5,22 @@
 class Hway < Formula
   desc "Motr is a proxy for interacting with the Sonr network."
   homepage "https://sonr.io/"
-  version "0.5.2"
+  version "0.5.4"
 
   depends_on "ipfs"
 
   on_macos do
     on_intel do
-      url "https://github.com/onsonr/sonr/releases/download/v0.5.2/hway_0.5.2_darwin_amd64.tar.gz"
-      sha256 "380c55fb59eab18d10b8d776b6a8f495af48365982df5d159a34b4d614564695"
+      url "https://github.com/onsonr/sonr/releases/download/v0.5.4/hway_0.5.4_darwin_amd64.tar.gz"
+      sha256 "b79fa4155af654294500ae86eb501ed4710e7fa617e6bb33544058bf550456dc"
 
       def install
         bin.install "hway"
       end
     end
     on_arm do
-      url "https://github.com/onsonr/sonr/releases/download/v0.5.2/hway_0.5.2_darwin_arm64.tar.gz"
-      sha256 "58797ab107579fc13433262e19b2669bfe84445497d1fdbfd69c75881cf5e69f"
+      url "https://github.com/onsonr/sonr/releases/download/v0.5.4/hway_0.5.4_darwin_arm64.tar.gz"
+      sha256 "47cc0f821e2f741a4ff191c3ee162418f85116ef455c0ef3840ca591c64742e8"
 
       def install
         bin.install "hway"
@@ -31,8 +31,8 @@ class Hway < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onsonr/sonr/releases/download/v0.5.2/hway_0.5.2_linux_amd64.tar.gz"
-        sha256 "3696d12d7dfbe33667a54ea852b220c83262c35522508e08c4a8c3673b149888"
+        url "https://github.com/onsonr/sonr/releases/download/v0.5.4/hway_0.5.4_linux_amd64.tar.gz"
+        sha256 "1786c98acab3bb793116385afa9bc6036a3fbc4e70177173f440aa987325c352"
 
         def install
           bin.install "hway"
@@ -41,8 +41,8 @@ class Hway < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onsonr/sonr/releases/download/v0.5.2/hway_0.5.2_linux_arm64.tar.gz"
-        sha256 "06ac8b73f49ae30abf6645831b426acc2324085c786c865bc8776fb19401d909"
+        url "https://github.com/onsonr/sonr/releases/download/v0.5.4/hway_0.5.4_linux_arm64.tar.gz"
+        sha256 "fc9812c3572189c59b69b1c4902a854e8db57e223e05ecb1f29aad8d48460aec"
 
         def install
           bin.install "hway"
