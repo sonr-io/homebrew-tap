@@ -12,7 +12,7 @@ class Hway < Formula
   on_macos do
     on_intel do
       url "https://github.com/onsonr/sonr/releases/download/v0.5.2/hway_0.5.2_darwin_amd64.tar.gz"
-      sha256 "229321823a4cad8a56f6da3c69cb51cba0404857b3532fbaf657c5e6d1454ba7"
+      sha256 "380c55fb59eab18d10b8d776b6a8f495af48365982df5d159a34b4d614564695"
 
       def install
         bin.install "hway"
@@ -20,7 +20,7 @@ class Hway < Formula
     end
     on_arm do
       url "https://github.com/onsonr/sonr/releases/download/v0.5.2/hway_0.5.2_darwin_arm64.tar.gz"
-      sha256 "ae90e1bb3246c214b756c34cac28805aa46bfdcf1a8e5492ec86b0b119106521"
+      sha256 "58797ab107579fc13433262e19b2669bfe84445497d1fdbfd69c75881cf5e69f"
 
       def install
         bin.install "hway"
@@ -32,7 +32,7 @@ class Hway < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/onsonr/sonr/releases/download/v0.5.2/hway_0.5.2_linux_amd64.tar.gz"
-        sha256 "8eca409cb1f1ae85bf4c584e689a4a9ff751d8ee95e8da3b070610a3c1173679"
+        sha256 "3696d12d7dfbe33667a54ea852b220c83262c35522508e08c4a8c3673b149888"
 
         def install
           bin.install "hway"
@@ -42,7 +42,7 @@ class Hway < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/onsonr/sonr/releases/download/v0.5.2/hway_0.5.2_linux_arm64.tar.gz"
-        sha256 "12201f4a42562849701e445bd691daae765991c95302d8b73007095172572f41"
+        sha256 "06ac8b73f49ae30abf6645831b426acc2324085c786c865bc8776fb19401d909"
 
         def install
           bin.install "hway"
