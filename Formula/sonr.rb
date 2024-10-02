@@ -5,22 +5,22 @@
 class Sonr < Formula
   desc "Sonr is a decentralized, permissionless, and censorship-resistant identity network."
   homepage "https://sonr.io/"
-  version "0.5.1"
+  version "0.5.2"
 
   depends_on "ipfs"
 
   on_macos do
     on_intel do
-      url "https://github.com/onsonr/sonr/releases/download/v0.5.1/sonr_0.5.1_darwin_amd64.tar.gz"
-      sha256 "ab393aa6d7b4e3cd6ff7c9d6747651a6491712860cd5f0d87141e41f9d557c46"
+      url "https://github.com/onsonr/sonr/releases/download/v0.5.2/sonr_0.5.2_darwin_amd64.tar.gz"
+      sha256 "60e10d369f932bbca27952507403e53e6e86a272a4e6d0ee39c967c9e77e3ec2"
 
       def install
         bin.install "sonrd"
       end
     end
     on_arm do
-      url "https://github.com/onsonr/sonr/releases/download/v0.5.1/sonr_0.5.1_darwin_arm64.tar.gz"
-      sha256 "ce16c8cb9e569b916aec218ae3705f1a7f461fe57bfbc687ab4a4fd05ee34a44"
+      url "https://github.com/onsonr/sonr/releases/download/v0.5.2/sonr_0.5.2_darwin_arm64.tar.gz"
+      sha256 "80530e3f835125edeb03c7e7480e16d060a664c40acb8eedfed53e33292d4b0c"
 
       def install
         bin.install "sonrd"
@@ -31,8 +31,8 @@ class Sonr < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onsonr/sonr/releases/download/v0.5.1/sonr_0.5.1_linux_amd64.tar.gz"
-        sha256 "cd6489688d466ff34d35ac2a162cbf9eed741043759082a63555300ae3b20516"
+        url "https://github.com/onsonr/sonr/releases/download/v0.5.2/sonr_0.5.2_linux_amd64.tar.gz"
+        sha256 "bafa13bda9437b4bf0a5e623014be8f30083713fefd22d04a5cf2e3881eb7a65"
 
         def install
           bin.install "sonrd"
@@ -41,8 +41,8 @@ class Sonr < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onsonr/sonr/releases/download/v0.5.1/sonr_0.5.1_linux_arm64.tar.gz"
-        sha256 "8d0dc65aa33c816f6f0241059a4b05150b8a51e9469b2018bc3134a113377705"
+        url "https://github.com/onsonr/sonr/releases/download/v0.5.2/sonr_0.5.2_linux_arm64.tar.gz"
+        sha256 "796f0d2fea6a703c675a0b881a5c6373747fcdc36c379058807435d74bd8ae4c"
 
         def install
           bin.install "sonrd"
