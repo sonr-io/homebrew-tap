@@ -5,22 +5,22 @@
 class Hway < Formula
   desc "Sonr is a decentralized, permissionless, and censorship-resistant identity network."
   homepage "https://onsonr.dev"
-  version "0.5.24"
+  version "0.5.25"
 
   depends_on "ipfs"
 
   on_macos do
     on_intel do
-      url "https://github.com/onsonr/sonr/releases/download/v0.5.24/hway_0.5.24_Darwin_x86_64.tar.gz"
-      sha256 "d536248edf7d869d716ac0e0b28adeba747c949991fb5b0f7528542f6662ed68"
+      url "https://github.com/onsonr/sonr/releases/download/v0.5.25/hway_0.5.25_Darwin_x86_64.tar.gz"
+      sha256 "045ffb1c4756f484e5942f43aa694b4faadc2de65e969133f3eae48332c57397"
 
       def install
         bin.install "hway"
       end
     end
     on_arm do
-      url "https://github.com/onsonr/sonr/releases/download/v0.5.24/hway_0.5.24_Darwin_arm64.tar.gz"
-      sha256 "8662fd364a573f5e18d3a6bf30f1d8e124e85a56041678514dd78c163bc65412"
+      url "https://github.com/onsonr/sonr/releases/download/v0.5.25/hway_0.5.25_Darwin_arm64.tar.gz"
+      sha256 "0bd78a3ee052b72c7174e7c8ab5afe55aacfd1f98b51ee5305fb9a39802ccc72"
 
       def install
         bin.install "hway"
@@ -31,8 +31,8 @@ class Hway < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onsonr/sonr/releases/download/v0.5.24/hway_0.5.24_Linux_x86_64.tar.gz"
-        sha256 "b36dc29f4081b590ea2f623c8a475dfddb6cc266adc3da4ca71be1b14aeab288"
+        url "https://github.com/onsonr/sonr/releases/download/v0.5.25/hway_0.5.25_Linux_x86_64.tar.gz"
+        sha256 "c307a1d6f5daf49bd4f7c4bd966322565159f8244707ef8c209e820e044325c9"
 
         def install
           bin.install "hway"
@@ -41,8 +41,8 @@ class Hway < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onsonr/sonr/releases/download/v0.5.24/hway_0.5.24_Linux_arm64.tar.gz"
-        sha256 "519b96d6ac67b3c9603b1d5142ca8bfdbb833cdb8c83383ccb4fc691d42acf9a"
+        url "https://github.com/onsonr/sonr/releases/download/v0.5.25/hway_0.5.25_Linux_arm64.tar.gz"
+        sha256 "899c662604abee9361f0fa5b7882f0f44e82690a746a883249b41a29d703e785"
 
         def install
           bin.install "hway"
