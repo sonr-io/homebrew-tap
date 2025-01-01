@@ -12,7 +12,7 @@ class Sonr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/onsonr/sonr/releases/download/v0.6.1/sonr_darwin_x86_64.tar.gz"
-      sha256 "3b37265586368c932669f7c80d0f78eda0ec1849079bba61f41002b37f699faa"
+      sha256 "80687e1290c5bba32a5b8ed4f598b9b60bdcbd560403fb11fdeada419b599942"
 
       def install
         bin.install "sonrd"
@@ -20,7 +20,7 @@ class Sonr < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/onsonr/sonr/releases/download/v0.6.1/sonr_darwin_arm64.tar.gz"
-      sha256 "bd03f828d472767eb22e62c6a186785dcffa852498a2e7f6b8b0ccddba749334"
+      sha256 "3c584afe9c1fc29e3a56c4e3bf9097895b54b3fca3451d082f8bf52bfe005458"
 
       def install
         bin.install "sonrd"
@@ -32,7 +32,7 @@ class Sonr < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/onsonr/sonr/releases/download/v0.6.1/sonr_linux_x86_64.tar.gz"
-        sha256 "4ff0a8feac0c4e0b1c1e5ff6c539e14a66365f1158c0a2897fd8acdb6c0a893f"
+        sha256 "bfb2f614f908516982ae29718e892731094d02b077b8d41770e9f68485527ac6"
 
         def install
           bin.install "sonrd"
@@ -42,7 +42,7 @@ class Sonr < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/onsonr/sonr/releases/download/v0.6.1/sonr_linux_arm64.tar.gz"
-        sha256 "4f4e117b82a941f0b4323d23cfb12c60345b707ba016017ccf1664ff6d1aaf8b"
+        sha256 "dc22c4bea0e987c9002d557bfb78312a0770710b05897b1cb42da2ff4922364f"
 
         def install
           bin.install "sonrd"
