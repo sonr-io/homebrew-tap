@@ -5,22 +5,22 @@
 class Hway < Formula
   desc "Sonr is a decentralized, permissionless, and censorship-resistant identity network."
   homepage "https://onsonr.dev"
-  version "0.6.0"
+  version "0.6.1"
 
   depends_on "ipfs"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onsonr/sonr/releases/download/v0.6.0/hway_0.6.0_Darwin_x86_64.tar.gz"
-      sha256 "4602d8dd3ca5fbc25e44fbcf0cb058d5198954a961b925f8e5879bf5c0bb119c"
+      url "https://github.com/onsonr/sonr/releases/download/v0.6.1/hway_0.6.1_Darwin_x86_64.tar.gz"
+      sha256 "66915e00e9d0b7c7d7746e7b33dcd1fb405a2d9f3896533883a0cd2322b8867d"
 
       def install
         bin.install "hway"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onsonr/sonr/releases/download/v0.6.0/hway_0.6.0_Darwin_arm64.tar.gz"
-      sha256 "fc5bba0146572dcb7d0091ea6ca53ac90a5161576e4708dd4556e11355dd9cec"
+      url "https://github.com/onsonr/sonr/releases/download/v0.6.1/hway_0.6.1_Darwin_arm64.tar.gz"
+      sha256 "f0efc2b37f049749d61d00a5ff0b7d96c2c2840c214541d68045095cd42d3fdf"
 
       def install
         bin.install "hway"
@@ -31,8 +31,8 @@ class Hway < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onsonr/sonr/releases/download/v0.6.0/hway_0.6.0_Linux_x86_64.tar.gz"
-        sha256 "dc478c488e578d56714c611fb9d94507ace87b55251285a3fed8a797ec46c191"
+        url "https://github.com/onsonr/sonr/releases/download/v0.6.1/hway_0.6.1_Linux_x86_64.tar.gz"
+        sha256 "6f06c44b5a42124365cebfd4addc6fbf5b362315155026cbe24a47ad4b0eef0b"
 
         def install
           bin.install "hway"
@@ -41,8 +41,8 @@ class Hway < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onsonr/sonr/releases/download/v0.6.0/hway_0.6.0_Linux_arm64.tar.gz"
-        sha256 "961261636e8e6a26f179dcc196e741e883ff34c4c6130604cab424372e21a442"
+        url "https://github.com/onsonr/sonr/releases/download/v0.6.1/hway_0.6.1_Linux_arm64.tar.gz"
+        sha256 "ace25c6b6a20a050fdacb3f592ed7a90134c8109fbd51d953f1c36b7f838ead7"
 
         def install
           bin.install "hway"
