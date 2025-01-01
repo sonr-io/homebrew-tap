@@ -5,22 +5,22 @@
 class Sonr < Formula
   desc "Sonr is a decentralized, permissionless, and censorship-resistant identity network."
   homepage "https://onsonr.dev"
-  version "0.6.1"
+  version "0.6.2"
 
   depends_on "ipfs"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onsonr/sonr/releases/download/v0.6.1/sonr_0.6.1_Darwin_x86_64.tar.gz"
-      sha256 "81f2272fb64c1f31b8e791dacffbbdab9f38e31c2631d2880358d28015952014"
+      url "https://github.com/onsonr/sonr/releases/download/v0.6.2/sonr_0.6.2_Darwin_x86_64.tar.gz"
+      sha256 "91a0fe64e2fb6144c6d6cc211d8a700fdc91404392272f30f54013373917261e"
 
       def install
         bin.install "sonrd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onsonr/sonr/releases/download/v0.6.1/sonr_0.6.1_Darwin_arm64.tar.gz"
-      sha256 "3f3fc8508e16ae1aafde7b13a61c98ad5f85968bee2651c693032de6ded2e6a9"
+      url "https://github.com/onsonr/sonr/releases/download/v0.6.2/sonr_0.6.2_Darwin_arm64.tar.gz"
+      sha256 "2856014430eb726eee205e7a1dee030bb926469f9e96ca21baf5d822c4db9109"
 
       def install
         bin.install "sonrd"
@@ -31,8 +31,8 @@ class Sonr < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onsonr/sonr/releases/download/v0.6.1/sonr_0.6.1_Linux_x86_64.tar.gz"
-        sha256 "c693e9d1b9cb45edc63a3059bf328deb6856f9f9dceb8b04ace9288cf8f8cbbd"
+        url "https://github.com/onsonr/sonr/releases/download/v0.6.2/sonr_0.6.2_Linux_x86_64.tar.gz"
+        sha256 "74d568cdc04b9453893e5e3b2c6de86b19752f05caca655e5b04b15c98596efb"
 
         def install
           bin.install "sonrd"
@@ -41,8 +41,8 @@ class Sonr < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onsonr/sonr/releases/download/v0.6.1/sonr_0.6.1_Linux_arm64.tar.gz"
-        sha256 "c70fa33f970a5ae42b6ae7b0857764f2f79420a7b592d3e2b9a9d93b8b2281f0"
+        url "https://github.com/onsonr/sonr/releases/download/v0.6.2/sonr_0.6.2_Linux_arm64.tar.gz"
+        sha256 "fd1c46cf653e626cb4760ff584b323f4be9792148ff2157a47489ef8f32e02ad"
 
         def install
           bin.install "sonrd"
